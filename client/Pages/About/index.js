@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { Page } from "../Styles";
 
 const About = () => (
-  <React.Fragment>
+  <Page>
     <Helmet>
       <title>about page</title>
     </Helmet>
     <div>my about page</div>
-  </React.Fragment>
+  </Page>
 );
 
 export default About;

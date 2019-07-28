@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { Page } from "../Styles";
 
 const Home = () => (
-  <React.Fragment>
+  <Page>
     <Helmet>
       <title>Home Page</title>
     </Helmet>
     <div>aloha world</div>
-  </React.Fragment>
+  </Page>
 );
 
 export default Home;

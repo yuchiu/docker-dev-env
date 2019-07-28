@@ -1,10 +1,11 @@
 import React from "react";
-import { GlobalStyles } from "../Styles";
+import { GlobalStyles } from "./Styles";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Home";
 import Loading from "../components/common/Modules/Loading";
 import ErrorMessage from "../components/common/Modules/ErrorMessage";
 import importComponent from "react-imported-component";
+import Header from "../components/common/Layout/Header";
 
 /*
  * To import it, I’d like to make use of the React.lazy and Suspense APIs,
@@ -22,6 +23,7 @@ const Router = () => (
   <BrowserRouter>
     <React.Fragment>
       <GlobalStyles />
+      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" render={() => <About />} />
