@@ -2,8 +2,8 @@ import React from "react";
 import { GlobalStyles } from "./Styles";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Home";
-import Loading from "../components/common/Modules/Loading";
-import ErrorMessage from "../components/common/Modules/ErrorMessage";
+import Loading from "./Loading";
+import ErrorPage from "./Error";
 import importComponent from "react-imported-component";
 import Header from "../components/common/Layout/Header";
 
@@ -16,7 +16,7 @@ import Header from "../components/common/Layout/Header";
  */
 const About = importComponent(() => import("./About"), {
   LoadingComponent: Loading,
-  ErrorComponent: ErrorMessage
+  ErrorComponent: ErrorPage
 });
 
 const Router = () => (
